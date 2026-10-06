@@ -11,7 +11,8 @@ A local computer vision workspace inspired by sports-analysis dashboards. Upload
 Requires Python 3.12 and FFmpeg on your PATH.
 
 ```bash
-cd SportsVision
+git clone https://github.com/starAIdeveloper/SportVision.git
+cd SportVision
 python -m venv .venv
 # macOS / Linux
 source .venv/bin/activate
@@ -97,4 +98,4 @@ Interactive documentation is at `/docs`.
 
 ## Implementation history
 
-This project was built with AI assistance in successive commits: scaffold, analysis backend, dashboard, tests and validation fixes. Imported commits in the parent repository retain the original local commit SHA in their messages. A Git bundle preserves the exact local author metadata and original history.
+This project was built with AI assistance in successive commits: scaffold, analysis backend, dashboard, tests and validation fixes. Imported commits in this standalone repository retain the original local commit SHA in their messages. SportsVision-history.bundle preserves the exact local author metadata and original history. The project was migrated from starAIdeveloper/ThreeJS-Game/SportsVision.
