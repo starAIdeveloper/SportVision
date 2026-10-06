@@ -1,8 +1,11 @@
-name: SportsVision tests
+name: SportsVision validation
 on: [push, pull_request]
+permissions:
+  contents: read
 jobs:
-  test:
+  verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -11,3 +14,12 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - run: pip install -r requirements-dev.txt
       - run: pytest -q
+      - run: playwright install --with-deps chromium
+      - run: python scripts/browser_check.py
+        env:
+          SPORTSVISION_START_SERVER: '1'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sportsvision-browser-evidence
+          path: artifacts/
