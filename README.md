@@ -6,6 +6,26 @@ A local computer vision workspace inspired by sports-analysis dashboards. Upload
 
 [Mobile screenshot](artifacts/mobile.webp)
 
+## Design reference gallery
+
+User-supplied interface concepts for the sports analysis workspace. These are design references; running-app screenshots are shown above.
+
+### Football analysis dashboard
+
+![Football analysis dashboard with player tracking, performance charts and heatmaps](docs/images/sport_analyze-3.png)
+
+### Mobile dashboard and training screens
+
+![Mobile concepts showing the dashboard, workout planner, AI coach, analytics and profile](docs/images/sport_analyze-0.png)
+
+### Match analysis workspace
+
+![Match analysis concept with player performance, trajectories and video synopsis](docs/images/sport_analyze-1.png)
+
+### Tracking and performance overview
+
+![Football tracking concept with speed charts, pose tracking, heatmaps and key moments](docs/images/sport_analyze-2.png)
+
 ## Run locally
 
 Requires Python 3.12 and FFmpeg on your PATH.
@@ -45,7 +65,7 @@ Homography maps normalized image footpoints into the court plane. Distance sums 
 
 Uncalibrated analysis shows normalized image coordinates and image units per second. Physical metric cards show N/A. Track fragments are not identified athletes; association can switch IDs or split tracks. Summed distance includes every retained fragment and is not a team workload measurement.
 
-The default detector finds moving foreground objects, including non-players. It is designed for fixed cameras. It does not reliably analyze panning broadcast footage. Team membership, jersey numbers, passes, possession, shot accuracy, pose action classifications and AI coaching are not automatically inferred. Event cards are manual annotations. Sample footage is clearly labeled and is not a real match. Reference images and real-match footage are not redistributed.
+The default detector finds moving foreground objects, including non-players. It is designed for fixed cameras. It does not reliably analyze panning broadcast footage. Team membership, jersey numbers, passes, possession, shot accuracy, pose action classifications and AI coaching are not automatically inferred. Event cards are manual annotations. Sample footage is clearly labeled and is not a real match. The gallery contains user-supplied design references, not application output. Real-match video footage is not bundled.
 
 ## Optional pose model
 
