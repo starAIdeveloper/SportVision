@@ -2,8 +2,6 @@
 
 A local computer vision workspace inspired by sports-analysis dashboards. Upload a fixed-camera clip, inspect tracked motion, review trajectories and occupancy heatmaps, calibrate a court, annotate moments, and export observations. Football, basketball and volleyball presets are included.
 
-![Desktop dashboard with generated test footage](artifacts/desktop.webp)
-
 ## Design reference gallery
 
 User-supplied interface concepts for the sports analysis workspace. These are design references; running-app screenshots are shown above.
