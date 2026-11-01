@@ -4,8 +4,6 @@ A local computer vision workspace inspired by sports-analysis dashboards. Upload
 
 ![Desktop dashboard with generated test footage](artifacts/desktop.webp)
 
-[Mobile screenshot](artifacts/mobile.webp)
-
 ## Design reference gallery
 
 User-supplied interface concepts for the sports analysis workspace. These are design references; running-app screenshots are shown above.
